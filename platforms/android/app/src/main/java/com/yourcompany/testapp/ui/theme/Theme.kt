@@ -13,9 +13,9 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = PrimaryIndigo,
-    secondary = SecondaryTeal,
-    tertiary = Color(0xFFF43F5E),             // Rose 500
+    primary = PrimaryLightGray,
+    secondary = SecondaryGray,
+    tertiary = Color(0xFF9CA3AF),             // Gray 400
     background = DarkBg,
     surface = DarkSurface,
     onBackground = DarkOnBg,
@@ -27,14 +27,14 @@ private val DarkColorScheme = darkColorScheme(
     secondaryContainer = DarkBotBubble,
     onSecondaryContainer = DarkBotBubbleText,
     // input field
-    surfaceVariant = Color(0xFF1E293B),
-    onSurfaceVariant = Color(0xFFCBD5E1)
+    surfaceVariant = Color(0xFF374151),
+    onSurfaceVariant = Color(0xFFD1D5DB)
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = PrimaryDarkIndigo,
-    secondary = SecondaryTeal,
-    tertiary = Color(0xFFE11D48),             // Rose 600
+    primary = PrimaryGray,
+    secondary = SecondaryGray,
+    tertiary = Color(0xFF6B7280),             // Gray 500
     background = LightBg,
     surface = LightSurface,
     onBackground = LightOnBg,
@@ -46,8 +46,8 @@ private val LightColorScheme = lightColorScheme(
     secondaryContainer = LightBotBubble,
     onSecondaryContainer = LightBotBubbleText,
     // input field
-    surfaceVariant = Color(0xFFE2E8F0),
-    onSurfaceVariant = Color(0xFF64748B)
+    surfaceVariant = Color(0xFFE5E7EB),
+    onSurfaceVariant = Color(0xFF4B5563)
 )
 
 @Composable
