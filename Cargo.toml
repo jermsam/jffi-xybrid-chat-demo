@@ -1,0 +1,18 @@
+[workspace]
+members = ["core", "cli"]
+resolver = "2"
+
+# Optimize all dependencies even in dev/debug mode to make local LLM run at release speed
+[profile.dev.package."*"]
+opt-level = 3
+
+# Also optimize our own core crate in dev mode
+[profile.dev]
+opt-level = 3
+
+# Maximum optimization settings for release builds
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
